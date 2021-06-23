@@ -1,0 +1,517 @@
+@charset "utf-8";
+/*main.css*/
+
+@import url(reset.css);
+@import url(common.css);
+
+/*section*/
+section {
+    width: 100vw;
+    height: 100%;
+}
+
+/*글자 제목들*/
+h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 7rem;
+    line-height: 100px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    padding-top: 10%;
+    color: #303030;
+}
+
+/*h3:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 250px;
+    border-bottom: 4px solid #333;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #303030;
+}*/
+
+/**************2.section.A**************/
+section.A {
+    position: relative;
+}
+
+section.A .banner {
+    position: relative;
+    width: 110vw;
+    height: 800px;
+    background: url(../images/back01.webp) no-repeat center/cover;
+}
+
+/*상단배너 불투명한 배경*/
+section.A .bg {
+    position: absolute;
+    top: 0;
+    width: 45%;
+    min-width: 400px;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/*특허버인 이지 상표전문*/
+section.A ul.tit {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    width: 360px;
+    z-index: 1;
+    margin-right: 20px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+section.A ul.tit li:nth-of-type(1) {
+    width: 100%;
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 350px 0px 12px 0;
+}
+
+section.A ul.tit li:nth-of-type(2) {
+    font-size: 2rem;
+    line-height: 35px;
+    width: 100%;
+}
+
+/**************2.section.A:끝**************/
+
+
+
+/**************3.section.B**************/
+section.B {
+    position: relative;
+    height: auto;
+    background: #eee;
+}
+
+
+/*분야*/
+section.B .cbox {
+    position: relative;
+    width: 980px;
+    height: 1000PX;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.B .column {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 15px 0px 15px 40px;
+    height: 200px;
+}
+
+section.B .column h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #303030;
+}
+
+section.B .column p {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    font-weight: 400;
+    color: #5c6956;
+}
+
+/**************3.section.B:끝**************/
+
+/**************4.section.C**************/
+/*사무소 소개*/
+section.C {
+    position: relative;
+}
+
+section.C h4 {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    font-weight: 500;
+    color: #303030;
+}
+
+.cbox2 {
+    position: relative;
+    width: 1024px;
+    height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.C .office {
+    width: 100%;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+section.C img {
+    float: left;
+    width: 424px;
+    height: 276px;
+}
+
+section.C .office p {
+    float: left;
+    width: 550px;
+    font-size: 1.6rem;
+    line-height: 3.9rem;
+    font-weight: 300;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+/*특허법인 이지 파트너 변리사 박상환*/
+section.C .office .span {
+    float: right;
+    width: 200px;
+    padding-top: 40px;
+}
+
+section.C .office span.ez {
+    width: 100px;
+    font-weight: 300;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: georgia, palatino, book antiqua, palatino linotype, serif;
+}
+
+section.C .office span.psh {
+    font-size: 2rem;
+    line-height: 3.9rem;
+    font-weight: 400;
+}
+
+/**************4.section.C:끝**************/
+
+
+/**************5.section.D**************/
+/*영상부분*/
+section.D {
+    position: relative;
+    background: #ddd;
+    width: 102vw;
+    height: 625px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+section.D .video {
+    position: absolute;
+    bottom: -5px;
+}
+
+/**************5.section.D:끝**************/
+
+/**************6.section.E**************/
+/*"변리사 소개"*/
+section.E {
+    position: relative;
+    background: #EFF0F3;
+    height: 1700px;
+}
+
+section.E .cbox {
+    position: relative;
+    width: 1000px;
+    height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*"박상환 파트너변리사"*/
+section.E .Etit {
+    position: relative;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 550;
+    color: #303030;
+    z-index: 1;
+}
+
+/*"파트너변리사"*/
+section.E p.Etit span {
+    color: #858585;
+}
+
+/*변리사님 이미지*/
+section.E .back04 {
+    position: absolute;
+    bottom: 0;
+    width: 980px;
+    height: 100vh;
+    background: url(../images/back04.webp) no-repeat;
+    background-position: right bottom;
+    z-index: -1;
+}
+
+/*글자박스*/
+section.E .inbox {
+    position: absolute;
+    top: 40%;
+    width: 500px;
+    z-index: 10;
+}
+
+/*단락*/
+section.E .inbox .column {
+    width: 250px;
+    margin-top: 30px;
+    float: left;
+    top: 120px;
+    padding: 0;
+    /*height: 0;*/
+}
+
+/*단락제목*/
+section.E .inbox .column h5 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 5rem;
+    color: #303030;
+}
+
+/*단락내용*/
+section.E .inbox .column p {
+    font-size: 1.5rem;
+}
+
+
+section.E .inbox .columntop {
+    margin-top: 100px;
+}
+
+/*자서전*/
+section.E .inbox .column2 {
+    display: flex;
+    width: 980px;
+    margin-top: 50%;
+    float: left;
+}
+
+/*하단 이미지*/
+section.E .inbox .column3 {
+    display: flex;
+    width: 980px;
+    margin-top: 75px;
+    float: left;
+}
+
+section.E .inbox .bookbox {
+    float: left;
+}
+
+section.E .inbox .bookbox2 {
+    padding-left: 150px;
+}
+
+section.E .inbox .column2 p {
+    /*float: left;*/
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+section.E .inbox .column2 p:nth-of-type(1) {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #303030;
+}
+
+section.E .inbox .column2 p:nth-of-type(2) {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #303030;
+}
+
+section.E .inbox .column2 img.book {
+    border: 8px solid #fff;
+    box-shadow: 0px 0px 10px #777777;
+}
+
+section.E .inbox .column2 img {
+    float: left;
+    display: block;
+}
+
+/**************6.section.E:끝**************/
+
+/**************7.section.F**************/
+/*문의하기*/
+section.F {
+    position: relative;
+    background: #000;
+    height: 1000px;
+}
+
+/*배경사진*/
+section.F .ask {
+    height: 1000px;
+    opacity: 0.3;
+    background: url(../images/back07.webp) no-repeat center/cover;
+}
+
+/*"CONTACT"*/
+section.F p {
+    position: absolute;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    opacity: 1;
+    top: 20%;
+    right: 5%;
+}
+
+/*좌측 검은박스*/
+section.F .bg {
+    position: absolute;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    display: inline-block
+}
+
+/*문의하기 우측내용*/
+section.F .askbox {
+    position: absolute;
+    top: 0;
+    left: 42%;
+    width: 700px;
+    height: 100vh;
+    z-index: 2;
+    display: inline-block
+}
+
+section.F .askbox ul {
+    position: absolute;
+    top: 21%;
+}
+
+section.F .askbox ul li {
+    width: 100%;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 3rem;
+}
+
+section.F .askbox ul li span {
+    font-weight: 450;
+}
+
+section.F .askbox ul li:nth-of-type(1) {
+    font-size: 2.2rem;
+    padding-bottom: 30px;
+}
+
+section.F .askbox ul li:nth-of-type(6) {
+    padding-top: 30px;
+}
+
+/*입력박스*/
+/*section.F .askbox ul li.putbox {
+    position: relative;
+    float: left;
+    width: 200px;
+    box-sizing: border-box;
+    margin-right: 5px;
+}*/
+
+/*.firstask{
+    float: left;
+    width: 200px;
+    padding-right: 10px;
+}*/
+/*.secondask{
+    float: left;
+    width: 200px;
+}*/
+
+/*.F button {
+    margin-left: 10px;
+    float: left;
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    background: #8B8072;
+    border: none;
+    cursor: pointer;
+}*/
+
+/*input.fstin {
+    float: left;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 3px;
+}*/
+
+/*textarea*/
+/*#scdin {
+    width: 100%;
+    height: 96px;
+    padding: 3px;
+    resize: none;
+}*/
+
+/*지도*/
+#map {
+    position: relative;
+    bottom: 0;
+    padding: 0;
+    margin-top: 10px;
+    width: 30vw;
+    height: 15vw;
+    outline: 3px solid #ccc;
+    overflow: hidden;
+    /* margin: 10px 0px 10px 0px;*/
+}
+
+/*구글맵*/
+.gmap {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/**************7.section.F:끝**************/
+
+/**************8.section.G**************/
+section.G {
+    position: relative;
+    background: #000;
+    height: 100px;
+    width: 102vw;
+    text-align: center;
+}
+
+section.G li img {
+    /*위로 화살표*/
+    width: 40px;
+    color: #fff;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+section.G li {
+    /*메인으로 글자*/
+    width: 100%;
+    color: #fff;
+    display: block;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 200;
+}
+
+/**************8.section.G:끝**************/

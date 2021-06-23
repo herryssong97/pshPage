@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: text/html; charset=UTF-8");
-include_once($_SERVER['DOCUMENT_ROOT'].'/mail_module/PHPMailer/PHPMailerAutoload.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'./mail_send/PHPMailer/PHPMailerAutoload.php');
 
 function mailer($fname, $fmail, $to, $subject, $content, $type=0, $file="", $cc="", $bcc="")
 {
